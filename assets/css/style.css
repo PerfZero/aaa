@@ -57,6 +57,22 @@ img {
   flex: 1;
 }
 
+.switch{
+  display: none;
+}
+
+.physical-item__text p{
+  text-align: center;
+}
+
+.physical-item__text{
+  padding: 0 10px;
+}
+
+.swiper-pagination{
+  display: none;
+}
+
 .header__logo-img img {
   width: 50px;
   height: 50px;
@@ -764,6 +780,10 @@ img {
   left: 152px;
 }
 
+.bm{
+  display: none !important;
+}
+
 .about_block_3 h3 {
   font-weight: 700;
   font-size: 38px;
@@ -788,6 +808,8 @@ img {
   color: #fff;
   padding: 60px;
   border-radius: 30px;
+  overflow: hidden;
+
   position: relative;
 }
 
@@ -1434,9 +1456,14 @@ p {
 
   .giv_credit .giv_credit_img {
     top: 156px;
-    right: 90px;
+    right: 110px;
     position: absolute;
-  }
+    width: 50%;
+}
+
+.bm{
+  display: block !important;
+}
 
   .giv_credit .giv_credit_img img {
     width: 100%;

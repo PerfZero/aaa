@@ -103,11 +103,11 @@ const swiper1 = new Swiper(".swiper-bank", {
       spaceBetween: 40,
     },
     1280: {
-      slidesPerView: 3,
+      slidesPerView: 6,
       spaceBetween: 40,
     },
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 6,
       spaceBetween: 40,
     },
   },
