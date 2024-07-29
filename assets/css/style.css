@@ -1116,7 +1116,7 @@ color: #000;
 
   .first_fin_wrapper {
     padding: 40px 20px;    align-items: flex-start;
-    height: 460px;
+    height: 480px;
   }
 
   .first_fin_text h2 {
@@ -1129,7 +1129,7 @@ color: #000;
   }
 
   .first_fin_img {
-    top: 276px;
+    top: 296px;
     right: -31px;
     position: absolute;
     width: 100%;
