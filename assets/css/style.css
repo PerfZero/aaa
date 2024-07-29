@@ -78,6 +78,10 @@ img {
   margin-right: 70px;
 }
 
+.way-tabs__item p{
+  margin-bottom: 0 !important ;
+}
+
 .header_nav {
   display: flex;
 }
@@ -182,13 +186,12 @@ img {
 .btn-calculate {
   background: #a9f002;
   border-radius: 9px;
-  width: 263px;
+  width: 282px;
   height: 66px;
   font-weight: 600;
   font-size: 17px;
   line-height: 120%;
-  text-transform: uppercase;
-  color: #3f3f3f;
+  color: #000;
   border: none;
   cursor: pointer;
   transition: 0.3s;
@@ -571,7 +574,7 @@ img {
 }
 
 .services__block {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .swiper {
@@ -966,6 +969,7 @@ p {
 
 .quset {
   font-weight: 500;
+  margin-bottom: 0;
   font-size: 23px;
 }
 
@@ -992,12 +996,11 @@ p {
 
   .block-approved {
     background: none;
-    padding: 30px 40px;
+    padding: 10px;
   }
 
   .block-approved__text {
-    margin-top: 250px;
-  }
+    margin-top: 264px;  }
 
   .block-approved__image {
     right: 49px;
@@ -1009,11 +1012,12 @@ p {
     text-align: center;
   }
   .block-approved__title {
-    margin-bottom: 18px;
-    font-size: 32px;
+    margin-bottom: 19px;
+    font-size: 43px;
   }
   .block-approved__desk {
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
   .content {
     display: none;
@@ -1021,15 +1025,17 @@ p {
 
   .content.active {
     display: block;
+    height: 143px;
   }
   .main {
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
     padding-top: 30px;
+    margin-top: 49px;
   }
 
   .switch {
     background: #f2f3f5;
-    height: 56px;
+    height: 68px;
     width: 93%;
     display: flex;
     border-radius: 50px;
@@ -1048,7 +1054,12 @@ p {
     background: none;
     border: none;
     flex: 1;
-    padding: 14px 10px;
+    padding: 19px 10px;
+    font-weight: 400;
+font-size: 15px;
+line-height: 120%;
+text-align: center;
+color: #000;
   }
 
   .active {
@@ -1073,11 +1084,12 @@ p {
     max-width: 100%;
     width: auto;
     height: auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
   }
 
   .physical-item img {
-    width: 60px;
+    width: 50px;
     height: auto;
   }
 
@@ -1086,7 +1098,8 @@ p {
   }
 
   .physical-item__text {
-    margin-left: 20px;
+    margin-left: 0;
+    padding: 0;
   }
 
   .physical-item__text h3 {
@@ -1102,45 +1115,50 @@ p {
   }
 
   .first_fin_wrapper {
-    padding: 20px;
-    align-items: flex-start;
-    height: 400px;
+    padding: 40px 20px;    align-items: flex-start;
+    height: 460px;
   }
 
   .first_fin_text h2 {
-    font-size: 24px;
+    font-size: 33px;
     margin-bottom: 20px;
   }
 
   .first_fin_text p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .first_fin_img {
-    top: 159px;
-    right: -50px;
+    top: 276px;
+    right: -31px;
     position: absolute;
+    width: 100%;
   }
   .first_fin {
-    margin-top: 30px;
+    margin-top: 90px;
     padding-bottom: 30px;
     padding: 0 10px;
   }
 
+  #physicalContent{
+    height: 143px;
+  }
+
   .block_calculate-title h2 {
-    font-size: 24px;
+    font-size:  33px;
   }
 
   .block_calculate {
-    margin-top: 30px;
+    margin-top: 64px;
     padding: 10px;
   }
 
   .block_calculate-title form {
     background-color: #f3f4f5;
-    padding: 20px;
+    padding: 57px 17px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
 
   .form_name-label label {
@@ -1172,14 +1190,14 @@ p {
     right: -220px;
     justify-content: center;
     top: 20px;
-    left: 291px;
+    left: 388px;
     cursor: pointer;
   }
 
   .form-group .radio-labels label {
     background: #e3e3e4;
     flex: 1;
-    padding: 17px 10px;
+    padding: 10px 10px;
     border: none;
     border-radius: 30px;
     text-align: center;
@@ -1198,19 +1216,18 @@ p {
 
   .sum-k label {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 28px;
   }
 
   .sum-k p {
     font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 27px;
+    margin-bottom: 42px;
   }
   .form-groups button {
-    /* width: 100%; */
-    border-radius: 13px;
-    width: 225px;
-    padding: 18px 0;
+border-radius: 13px;
+    width: 284px;
+    padding: 21px 0;
     border: none;
     /* border-radius: 5px; */
     background-color: #a9f002;
@@ -1246,12 +1263,12 @@ p {
   }
 
   .block_commission {
-    padding: 30px 10px 60px;
+    padding: 0px 10px 119px;
   }
 
   .block_commission h2 {
     width: auto;
-    font-size: 24px;
+    font-size: 33px;
   }
 
   .buttin-swop {
@@ -1260,25 +1277,30 @@ p {
   .commission_card h3 {
     font-weight: 700;
     padding: 10px 20px;
-    margin-top: 122px;
-    font-size: 24px;
+    margin-top: -10px;
+    font-size: 31px;
     line-height: 109%;
     color: #000;
   }
   .commission_card p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 120%;
     padding: 20px;
     color: #0b0b0b;
     margin-bottom: 10px;
   }
 
+  .commission_card-img{
+    width: 100%;
+    text-align: center;
+  }
+
   .commission_card img {
-    position: absolute;
-    top: -50px;
-    width: 180px;
-    left: 52px;
+    width: auto;
+    height: 270px;
+    position: relative;
+    top: -30px;
   }
 
   .block_commission .swiper-wrapper {
@@ -1286,8 +1308,7 @@ p {
   }
 
   .commission_card {
-    height: 350px;
-    border-radius: 20px;
+    height: 520px;    border-radius: 40px;
   }
   .cul_btn {
     font-weight: 600;
@@ -1314,9 +1335,9 @@ p {
     flex-direction: row-reverse;
     height: auto;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 10px;
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   .services__item img {
@@ -1326,7 +1347,12 @@ p {
   .services__item h3 {
     padding: 0;
     text-align: left;
-    font-size: clamp(0.875rem, 3.636vw + 0.148rem, 1.125rem);
+    font-size: 22px;
+    line-height: 90%;
+  }
+
+  .tt{
+    margin-top: 70px;
   }
 
   .services__item p {
@@ -1337,17 +1363,21 @@ p {
   }
 
   .serives_list {
-    margin-top: 30px;
+    margin-top: 17px;
 
     gap: 10px;
   }
 
   .services__block h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .dop-w {
     height: 600px;
+  }
+
+  .form-group input[type="text"] {
+    font-size: 16px;
   }
 
   .dop-w p {
@@ -1356,13 +1386,14 @@ p {
   }
 
   .seatch {
-    top: 349px;
+    top: 419px;
     right: 20px;
+    width: 87%;
     position: absolute;
   }
 
   .about_block_1 {
-    font-size: 20px;
+    font-size: 29px;
     height: auto;
     border-radius: 20px;
   }
@@ -1384,10 +1415,11 @@ p {
   }
 
   .about_block_3 {
+    max-width: 40%;
     border-radius: 20px;
-    height: 120px;
+    height: 168px;
     max-width: clamp(9.5rem, 50.909vw - 2.432rem, 11.25rem);
-    padding: 10px;
+    padding: 20px 10px;    width: auto;
     flex: none;
   }
 
@@ -1396,28 +1428,41 @@ p {
     position: absolute;
     height: auto;
     bottom: 2px;
-    left: clamp(5rem, 21.818vw - 0.114rem, 5.75rem);
+    left:92px;
   }
 
   .buttin-swops {
     display: none;
   }
   .about_block_3 h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .about_block_3 p {
-    font-size: 13px;
-    margin-bottom: 0;
+    font-size: 19px;
+    margin-bottom: 5px;
   }
 
   .about-wrapper {
-    margin-top: 20px;
+    margin-top: 36px;
   }
 
   .about {
-    padding: 30px 10px;
+    padding: 80px 10px 0;
+    margin-bottom: 60px;
   }
+
+  .bank-sw {
+    padding: 0 20px;
+    margin-bottom: -40px;
+    padding-top: 0px !important;
+    margin: 0;
+}
+
+.giv_credit {
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
 
   .about h2 {
     font-size: 23px;
@@ -1428,17 +1473,17 @@ p {
   }
 
   .giv_credit_wrapper h2 {
-    font-size: 23px;
-    margin-bottom: 210px;
-  }
+    font-size: 33px;
+    margin-bottom: 293px;  }
 
   .new-popup {
-    padding: 10px;
+    padding: 30px 10px;
     width: 90%;
   }
 
   .giv_credit_wrapper {
     position: relative;
+    padding: 60px 40px;
   }
 
   .giv_credit_text p {
@@ -1452,11 +1497,17 @@ p {
   }
 
   .giv_credit .giv_credit_img {
-    top: 156px;
-    right: 110px;
+    top: 208px;
+    right: 71px;
     position: absolute;
-    width: 50%;
+    width: 67%;
   }
+
+  .swiper {
+    overflow: visible;
+    position: relative;
+    padding-bottom: 40px;
+}
 
   .bm {
     display: block !important;
@@ -1511,7 +1562,7 @@ p {
   }
 
   .block_commission .sa {
-    top: 415px !important;
+    top: 614px !important;
   }
 
   .popups-content h2{
@@ -1529,6 +1580,21 @@ p {
     z-index: 1000;
     max-width: 750px;
     width: 91%;
-    padding: 10px;
+    padding: 50px 10px;
+}
+
+.popup-content {
+  background-color: #e5ecff;
+  margin: 75% auto;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 630px;
+  font-size: 23px;
+  position: relative;
+}
+
+.popup-content p{
+  font-size: 15px;
+  margin-bottom: 0;
 }
 }

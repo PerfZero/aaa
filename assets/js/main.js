@@ -14,17 +14,20 @@ const swiper = new Swiper(".swiper-w", {
   pagination: {
     el: ".swiper-pagination-1",
   },
+  autoplay: {
+    delay: 3000,
+  },
 
   // Breakpoints for responsive design
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
       spaceBetween: 10,
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
       spaceBetween: 20,
     },
     // when window width is >= 640px
@@ -73,6 +76,9 @@ const swiper1 = new Swiper(".swiper-bank", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination-2",
+  },
+  autoplay: {
+    delay: 3000,
   },
 
   // Breakpoints for responsive design
