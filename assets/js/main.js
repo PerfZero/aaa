@@ -150,6 +150,19 @@ function openNewPopup() {
   // Показываем попап
   document.getElementById("new-popup-overlay").style.display = "block";
   document.getElementById("new-popup").style.display = "block";
+
+  // Добавляем обработчик событий для закрытия попапа при клике за его пределами
+  document.getElementById("new-popup-overlay").addEventListener("click", function(event) {
+    if (event.target === this) {
+      closeNewPopup();
+    }
+  });
+}
+
+function closeNewPopup() {
+  // Скрываем попап и оверлей
+  document.getElementById("new-popup-overlay").style.display = "none";
+  document.getElementById("new-popup").style.display = "none";
 }
 
 function closeNewPopup() {
