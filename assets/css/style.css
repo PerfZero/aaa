@@ -1108,6 +1108,17 @@ color: #000;
     font-weight: 700;
   }
 
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.radio-labels-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.radio-labels-wrap {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
   .physical-item__text p {
     font-size: clamp(0.75rem, 5.455vw - 0.341rem, 1.125rem);
     text-align: left;
