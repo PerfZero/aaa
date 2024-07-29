@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_nav">
+        <div class="header__logo-img">
+          <img src="" alt="" />
+        </div>
+        <nav class="nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">Главная</li>
+            <li class="header-nav__item">О команде</li>
+            <li class="header-nav__item">Строительство</li>
+          </ul>
+        </nav>
+        <div class="button-class">
+          <button class="btn">Получить консультацию</button>
+        </div>
+      </div>
+    </header>
+<section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="block-approved">
+            <div class="block-approved__text">
+              <h1 class="block-approved__title">С нами одобряют 8/10 банков</h1>
+              <p class="block-approved__desk">
+                Знаем все скрытые требования компаний и видим, кто одобрит с
+                вероятностью 98%
+              </p>
+              <button class="btn-calculate">Рассчитать стоимость</button>
+            </div>
+            <div class="block-approved__image">
+              <img
+                src="/assets/img/approvde.png"
+                alt="С нами одобряют 8/10 банков"
+              />
+            </div>
+          </div>
+          <div class="block-credit__hero">
+            <div class="block-credit__text">
+              <h2 class="block-credit__title">
+                Рассрочки для клиентов онлайн-школ до 3 млн ₽
+              </h2>
+            </div>
+            <div class="block-credit__image">
+              <img
+                src="/assets/img/credit.png"
+                alt="С нами одобряют 8/10 банков"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-wrapper__down">
+          <ul class="hero-down-list">
+            <li class="hero-down__item">
+              <p>5 млн ₽ за 1 день для ИП</p>
+              <img src="assets/img/moneta.png" alt="" />
+            </li>
+            <li class="hero-down__item">
+              <p>До 10 млн ₽ от банка на мечту</p>
+              <img src="/assets/img/planet.png" alt="" />
+            </li>
+            <li class="hero-down__item">
+              <p>Онлайн кредиты тем, кто за границей</p>
+              <img src="/assets/img/roket.png" alt="" />
+            </li>
+            <li class="hero-down__item">
+              <p>Ипотека от 12 млн ₽</p>
+              <img src="/assets/img/house.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+         <section class="main">
+      <div class="container">
+
+         <div class="switch">
+        <button id="physicalButton" class="switch-button active">Физические лица</button>
+        <button id="legalButton" class="switch-button">Юридические лица</button>
+    </div>
+    
+    <div id="physicalContent" class="content active">
+        <div class="physical">
+            <div class="physical_title">
+                <h2>Для физических лиц</h2>
+            </div>
+            <ul class="physical-list">
+                <li class="physical-item">
+                  <div class="physical-item__text">
+                    <h3>От 500 тыс. до 6 млн для физ лиц</h3>
+                    <p>В течение 1-2-х дней</p>
+                  </div>
+                    <img src="/assets/img/time.png" alt="" />
+                </li>
+                <li class="physical-item">
+                  <div class="physical-item__text">
+                    <h3>От 500 тыс. до 6 млн для физ лиц</h3>
+                    <p>В течение 1-2-х дней</p>
+                  </div>
+                    <img src="/assets/img/car.png" alt="" />
+ 
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="legalContent" class="content">
+        <div class="physical">
+            <div class="physical_title">
+                <h2>Для юридических лиц</h2>
+            </div>
+            <ul class="physical-list">
+                <li class="physical-item">
+                  <div class="physical-item__text">
+                    <h3>От 5 млн до 50 млн ₽</h3>
+                    <p>Турбо-ускорение для Вашего бизнеса</p>
+                  </div>
+                    <img src="/assets/img/roker_1.png" alt="" />
+
+                </li>
+                <li class="physical-item">
+                  <div class="physical-item__text">
+                    <h3>Рассрочка для онлайн-школ</h3>
+                    <p>Забота о кредитной истории Ваших клиентов</p>
+                  </div>
+                    <img src="/assets/img/sch.png" alt="" />
+
+                </li>
+            </ul>
+        </div>
+    </div>
+       <div class="first_fin">
+          <div class="first_fin_wrapper">
+            <div class="first_fin_text">
+              <h2>
+                Первый финансовый интеллект, который найдет самый лояльный банк
+              </h2>
+              <p>
+                Заполните анкету, узнайте, кто готов одобрить Вам нужную сумму с
+                вероятностью 90% и получите деньги уже в течение суток
+              </p>
+            </div>
+            <div class="first_fin_img">
+              <img src="/assets/img/FIN.png" alt="" />
+            </div>
+          </div>
+        </div>
+         <div class="block_calculate">
+          <div class="block_calculate-title">
+            <h2>
+              Рассчитать <br />
+              кредитный потенциал<i onclick="openPopup()">?</i>
+            </h2>
+            <form id="main-form">
+              <div class="form_name-label">
+                <div class="form-group">
+                  <label for="name">ФИО: <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone"
+                    >Телефон: <span class="required">*</span></label
+                  >
+                  <input type="text" id="phone" name="phone" required />
+                </div>
+              </div>
+              <div class="form-group sum-k">
+                <label>Желаемая сумма кредита, руб.</label>
+                <div class="radio-labels-wrap">
+                <div class="radio-labels">
+                  <input
+                    type="radio"
+                    id="option1"
+                    name="amount"
+                    value="До 1 млн. ₽"
+                    required
+                  />
+                  <label for="option1">До 1 млн. ₽</label>
+
+                  <input
+                    type="radio"
+                    id="option2"
+                    name="amount"
+                    value="от 1 до 3 млн. ₽"
+                  />
+                  <label for="option2">от 1 до 3 млн. ₽</label>
+
+                  <input
+                    type="radio"
+                    id="option3"
+                    name="amount"
+                    value="от 3 до 8 млн. ₽"
+                  />
+                  <label for="option3">от 3 до 8 млн. ₽</label>
+
+                  <input
+                    type="radio"
+                    id="option4"
+                    name="amount"
+                    value="от 8 до 15 млн. ₽"
+                  />
+                  <label for="option4">от 8 до 15 млн. ₽</label>
+
+                  <input
+                    type="radio"
+                    id="option5"
+                    name="amount"
+                    value="более 15 млн. ₽"
+                  />
+                  <label for="option5">более 15 млн. ₽</label>
+                </div>
+              </div>
+                <p>* - поля обязательные для заполнения</p>
+              </div>
+              <div class="form-groups">
+                <button type="button" onclick="openNewPopup()">
+                  Рассчитать
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="block_commission">
+        <h2>Низкая комиссия+  <br />высокие стандарты</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/analy.png" alt="" />
+              <h3>Одобрение в 8/10 случаев</h3>
+              <p>Анализируем данные клиента и находим самый лояльный банк</p>
+              <button class="cul_btn">Рассчитать</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/cart.png" alt="" />
+              <h3>Бережем кредитную историю</h3>
+              <p>Вместо массовой рассылки  используем 1 точечную подачу</p>
+              <button class="cul_btn">Рассчитать</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/option.png" alt="" />
+              <h3>Привлекаем до 1 млрд ₽</h3>
+              <p>Первыми находим новые связки и возможности</p>
+              <button class="cul_btn">Получить деньги</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/bank.png" alt="" />
+              <h3>Только крупные банки</h3>
+              <p>Без микрофинансовых организаций</p>
+              <button class="cul_btn">Подробнее</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/persona.png" alt="" />
+              <h3>Персональный кредитный специалист</h3>
+              <p></p>
+              <button class="cul_btn">Получить консультацию</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/planet_1.png" alt="" />
+              <h3>Кредит даже для тех, кто за границей</h3>
+              <p>Первыми находим новые связки и возможности</p>
+              <button class="cul_btn">Рассчитать потенциал</button>
+            </div>
+            <div class="swiper-slide commission_card">
+              <img src="/assets/img/arrow_rub.png" alt="" />
+              <h3>Переводы по всему миру </h3>
+              <p>
+                Переводите деньги онлайн в более чем 170 стран с комиссией от 4%
+              </p>
+              <button class="cul_btn">Рассчитать потенциал</button>
+            </div>
+
+
+          </div>
+
+          <div class="buttin-swop">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="services__block">
+        <div class="container">
+          <h2>Услуги</h2>
+          <ul class="serives_list">
+            <li class="services__item">
+              <div class="services__item-text">
+              <h3>Ипотека от 6 до 30 млн ₽</h3>
+              <p>Ставка по ипотеке от 2%</p>
+            </div>
+              <img src="/assets/img/home_3.png" alt="" />
+            </li>
+            <li class="services__item">
+              <div class="services__item-text">
+              <h3>5 млн ₽ за 1 день для ИП</h3>
+              <p>Лучшие скрытые банковские предложения</p>
+            </div>
+              <img src="/assets/img/pazl.png" alt="" />
+            </li>
+            <li class="services__item">
+              <div class="services__item-text">
+              <h3>Кредиты тем, кто за границей</h3>
+              <p>Первыми находим новые связки</p>
+            </div>
+              <img src="/assets/img/loc.png" alt="" />
+            </li>
+            <li class="services__item">
+              <div class="services__item-text">
+              <h3>Рефинансирование кредитов</h3>
+              <p>Снизьте ежемесячный платёж по кредиту</p>
+            </div>
+              <img src="/assets/img/pult.png" alt="" />
+            </li>
+            <li class="services__item">
+              <div class="services__item-text">
+              <h3>Кредит на покупку автомобиля</h3>
+              <p>От 2 до 8 миллионов рублей</p>
+            </div>
+              <img src="/assets/img/car_3.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+     <div class="first_fin">
+        <div class="container">
+          <div class="first_fin_wrapper dop-w">
+            <div class="first_fin_text">
+              <h2>Получите консультацию специалиста</h2>
+              <p>
+                Перед консультацией с персональным кредитным специалистом,<b>
+                  рассчитайте свой кредитный потенциал, </b
+                >чтобы понять, какую сумму вам, возможно, одобрит банк.
+              </p>
+              <button class="custom-btn-btn">Рассчитать потенциал</button>
+            </div>
+            <div class="first_fin_img seatch">
+              <img src="/assets/img/search.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <section class="about">
+        <div class="container">
+          <h2>О нас</h2>
+          <div class="about-wrapper">
+            <div class="about_block_1">
+              <p>
+                360 – кредитный агрегатор с мозгами 500 банковских аналитиков
+              </p>
+            </div>
+            <div class="about_block_2">
+              <h3>Более чем 1.2 млрд ₽</h3>
+              <p>
+                360 – кредитный агрегатор с мозгами 500 банковских аналитиков
+              </p>
+              <img src="/assets/img/image_1.png" alt="" />
+            </div>
+          </div>
+          <div class="about-wrapper-down">
+            <div class="about_block_3">
+              <h3>Сделки до 1,5-3млн ₽</h3>
+              <p>получаем более лояльные условия от банка</p>
+              <img src="/assets/img/defe.png" alt="" />
+            </div>
+            <div class="about_block_3">
+              <h3>1 сутки</h3>
+              <p>после одобрения, и деньги придут на ваш счет</p>
+              <img src="/assets/img/times.png" alt="" />
+            </div>
+            <div class="about_block_3">
+              <h3>Деньги в 8/10 случаев</h3>
+              <p>находим банк с 80% вероятностью одобрения</p>
+              <img src="/assets/img/value.png" alt="" />
+            </div>
+            <div class="about_block_3">
+              <h3>Более чем 1.2 млрд ₽</h3>
+              <p>
+                360 – кредитный агрегатор с мозгами 500 банковских аналитиков
+              </p>
+              <img src="/assets/img/image_1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <div class="block_commission bank-sw">
+        <h2>Наши партнеры</h2>
+
+        <div class="swiper swiper-bank">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 31.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 32.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 33.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 34.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 35.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 36.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 37.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/img/Frame 38.png" alt="" />
+            </div>
+          </div>
+          <div class="buttin-swops">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+
+      <div class="giv_credit">
+        <div class="container">
+          <div class="giv_credit_wrapper">
+            <div class="giv_credit_text">
+              <h2>
+                Получение кредита нового поколения с искусственным интеллектом
+              </h2>
+              <p>
+                Мы берем от 4 до 8% от одобренной суммы и предоставляем сервис
+                Emirates-класса
+              </p>
+              <button class="custom-btn-btn giv">Рассчитать потенциал</button>
+            </div>
+            <div class="giv_credit_img seatch">
+              <img src="/assets/img/tel.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>
+          *«Рассчитать потенциал» — это не прямая заявка, это только<b>
+            анализ через наш компьютер ИИ</b
+          >, который делает предодобрение и показывает реальную возможность
+          клиенту взять ту или иную сумму.
+          <br />
+          <br />
+          Мы не подаем заявки без разрешения клиента, в том числе, до подписания
+          договора.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="new-popup-overlay" id="new-popup-overlay"></div>
+    <div class="new-popup" id="new-popup">
+      <div class="popup-contents">
+        <form id="popup-form">
+          <div class="form_name-label">
+            <div class="form-group">
+              <label for="popup-name"
+                >ФИО: <span class="required">*</span></label
+              >
+              <input type="text" id="popup-name" name="popup-name" readonly />
+            </div>
+            <div class="form-group">
+              <label for="popup-phone"
+                >Телефон: <span class="required">*</span></label
+              >
+              <input type="text" id="popup-phone" name="popup-phone" readonly />
+            </div>
+          </div>
+          <div class="form-group sum-k">
+            <label>Желаемая сумма кредита, руб.</label>
+            <div class="radio-labels-wrap">
+            <div class="radio-labels">
+              <input
+                type="radio"
+                id="popup-option1"
+                name="popup-amount"
+                value="До 1 млн. ₽"
+                disabled
+              />
+              <label for="popup-option1">До 1 млн. ₽</label>
+
+              <input
+                type="radio"
+                id="popup-option2"
+                name="popup-amount"
+                value="от 1 до 3 млн. ₽"
+                disabled
+              />
+              <label for="popup-option2">от 1 до 3 млн. ₽</label>
+
+              <input
+                type="radio"
+                id="popup-option3"
+                name="popup-amount"
+                value="от 3 до 8 млн. ₽"
+                disabled
+              />
+              <label for="popup-option3">от 3 до 8 млн. ₽</label>
+
+              <input
+                type="radio"
+                id="popup-option4"
+                name="popup-amount"
+                value="от 8 до 15 млн. ₽"
+                disabled
+              />
+              <label for="popup-option4">от 8 до 15 млн. ₽</label>
+
+              <input
+                type="radio"
+                id="popup-option5"
+                name="popup-amount"
+                value="более 15 млн. ₽"
+                disabled
+              />
+              <label for="popup-option5">более 15 млн. ₽</label>
+            </div>
+          </div>
+            <p>* - поля обязательные для заполнения</p>
+          </div>
+          <div class="adv-form__group">
+            <div class="form-group">
+              <label for="popup-passport-series"
+                >Серия паспорта:<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="popup-passport-series"
+                name="popup-passport-series"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="popup-passport-number"
+                >Номер паспорта:<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="popup-passport-number"
+                name="popup-passport-number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="popup-birthdate"
+                >Дата рождения:<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="popup-birthdate"
+                name="popup-birthdate"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="popup-income"
+                >Ваш доход:<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="popup-income"
+                name="popup-income"
+                required
+              />
+            </div>
+           
+          </div>
+          <div class="form-groups">
+            <button type="submit">Рассчитать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="success-popup-overlay" id="success-popup-overlay"></div>
+    <div class="success-popup" id="success-popup">
+      <div class="popups-content">
+        <img src="/assets/img/done.png" alt="" />
+        <h2>ДАННЫЕ УСПЕШНО ОТПРАВЛЕНЫ!</h2>
+        <p>
+          Ваша заявка уже проходит анализ, в ближайшее время вам придет
+          уведомление о предварительном решении
+        </p>
+        <p class="quset">Остались вопросы?</p>
+        <div class="form-groups">
+          <button type="submit">Связаться</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</html>
