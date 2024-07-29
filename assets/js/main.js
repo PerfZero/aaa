@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper-w", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 4,
