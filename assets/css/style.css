@@ -1,4 +1,3 @@
-
 :root {
   --font-family: "Source Sans Pro", sans-serif;
 }
@@ -57,27 +56,25 @@ img {
   flex: 1;
 }
 
-.switch{
+.switch {
   display: none;
 }
 
-.physical-item__text p{
+.physical-item__text p {
   text-align: center;
 }
 
-.physical-item__text{
+.physical-item__text {
   padding: 0 10px;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   display: none;
 }
 
 .header__logo-img img {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 100%;
+  width: 75px;
+  height: auto;
   margin-right: 70px;
 }
 
@@ -780,7 +777,7 @@ img {
   left: 152px;
 }
 
-.bm{
+.bm {
   display: none !important;
 }
 
@@ -851,7 +848,6 @@ img {
   margin: 15% auto;
   padding: 60px;
   border-radius: 30px;
-  width: 90%;
   max-width: 630px;
   font-size: 23px;
   position: relative;
@@ -940,7 +936,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #e7dcff;
+  background: #fff;
   padding: 20px;
   z-index: 1000;
   max-width: 750px;
@@ -959,7 +955,7 @@ img {
 
 .popups-content {
   text-align: center;
-  width: 530px;
+  max-width: 530px;
   margin: 0 auto;
 }
 
@@ -1250,7 +1246,8 @@ p {
   }
 
   .block_commission {
-    padding: 30px 10px 60px;  }
+    padding: 30px 10px 60px;
+  }
 
   .block_commission h2 {
     width: auto;
@@ -1459,17 +1456,25 @@ p {
     right: 110px;
     position: absolute;
     width: 50%;
-}
+  }
 
-.bm{
-  display: block !important;
-}
+  .bm {
+    display: block !important;
+  }
 
   .giv_credit .giv_credit_img img {
     width: 100%;
   }
 
-  .swiper-pagination{
+  .bank-sw .ss {
+    top: 145px !important;
+  }
+
+  .swiper-pagination {
+    display: block !important;
+  }
+
+  .swiper-pagination {
     top: 190px !important;
   }
 
@@ -1482,9 +1487,8 @@ p {
       --swiper-pagination-bullet-height,
       var(--swiper-pagination-bullet-size, 12px)
     );
-    background: #EEECEC;
+    background: #eeecec;
     opacity: 1;
-
   }
 
   .swiper-pagination-bullet-active {
@@ -1493,20 +1497,38 @@ p {
       var(--swiper-pagination-bullet-size, 35px)
     );
     border-radius: 10px;
-    background: #EEECEC;
+    background: #eeecec;
   }
 
   .swiper-pagination-bullet-active::before {
     border-radius: 20px;
     width: 17px;
     height: 12px;
-    content: '';
+    content: "";
     background: #000;
     display: block;
     position: absolute;
   }
 
-  .block_commission .swiper-pagination{
+  .block_commission .sa {
     top: 415px !important;
   }
+
+  .popups-content h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 750px;
+    width: 91%;
+    padding: 10px;
+}
 }
