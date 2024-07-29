@@ -12,7 +12,7 @@ const swiper = new Swiper(".swiper", {
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-1",
   },
 
   // Breakpoints for responsive design
@@ -72,7 +72,7 @@ const swiper1 = new Swiper(".swiper-bank", {
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-2",
   },
 
   // Breakpoints for responsive design
