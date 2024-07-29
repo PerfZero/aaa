@@ -61,13 +61,18 @@ const swiper = new Swiper(".swiper", {
 const swiper1 = new Swiper(".swiper-bank", {
   // Optional parameters
   direction: "horizontal",
-  slidesPerView: 6,
+  slidesPerView: 1,
   spaceBetween: 20,
 
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
   },
 
   // Breakpoints for responsive design
@@ -79,7 +84,7 @@ const swiper1 = new Swiper(".swiper-bank", {
     },
     // when window width is >= 480px
     480: {
-      slidesPerView:3,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     // when window width is >= 640px
