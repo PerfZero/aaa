@@ -159,6 +159,9 @@ function openNewPopup() {
   });
 }
 
+
+
+
 function closeNewPopup() {
   // Скрываем попап и оверлей
   document.getElementById("new-popup-overlay").style.display = "none";
@@ -215,5 +218,79 @@ document.addEventListener("DOMContentLoaded", function () {
     physicalButton.classList.remove("active");
     legalContent.classList.add("active");
     physicalContent.classList.remove("active");
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const phoneInput = document.getElementById('phone');
+  const passportSeriesInput = document.getElementById('popup-passport-series');
+  const passportNumberInput = document.getElementById('popup-passport-number');
+  const birthdateInput = document.getElementById('popup-birthdate');
+  const incomeInput = document.getElementById('popup-income');
+
+  // Маска для номера телефона
+  phoneInput.addEventListener('input', function() {
+      let value = phoneInput.value.replace(/\D+/g, '');
+      let formattedValue = '';
+
+      if (value.length > 0) {
+          formattedValue = '+7 (';
+      }
+      if (value.length > 1) {
+          formattedValue += value.substring(1, 4);
+      }
+      if (value.length >= 5) {
+          formattedValue += ') ' + value.substring(4, 7);
+      }
+      if (value.length >= 8) {
+          formattedValue += '-' + value.substring(7, 9);
+      }
+      if (value.length >= 10) {
+          formattedValue += '-' + value.substring(9, 11);
+      }
+
+      phoneInput.value = formattedValue;
+  });
+
+  phoneInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Backspace' && phoneInput.value.replace(/\D+/g, '').length === 1) {
+          e.preventDefault();
+          phoneInput.value = '';
+      }
+  });
+
+  // Маска для серии паспорта
+  passportSeriesInput.addEventListener('input', function() {
+      passportSeriesInput.value = passportSeriesInput.value.replace(/\D+/g, '').substring(0, 4);
+  });
+
+  // Маска для номера паспорта
+  passportNumberInput.addEventListener('input', function() {
+      passportNumberInput.value = passportNumberInput.value.replace(/\D+/g, '').substring(0, 6);
+  });
+
+  // Маска для даты рождения
+  birthdateInput.addEventListener('input', function() {
+      let value = birthdateInput.value.replace(/\D+/g, '');
+      let formattedValue = '';
+
+      if (value.length > 0) {
+          formattedValue = value.substring(0, 2);
+      }
+      if (value.length >= 3) {
+          formattedValue += '.' + value.substring(2, 4);
+      }
+      if (value.length >= 5) {
+          formattedValue += '.' + value.substring(4, 8);
+      }
+
+      birthdateInput.value = formattedValue;
+  });
+
+  // Маска для дохода
+  incomeInput.addEventListener('input', function() {
+      let value = incomeInput.value.replace(/\D+/g, '');
+      incomeInput.value = new Intl.NumberFormat('ru-RU').format(value);
   });
 });

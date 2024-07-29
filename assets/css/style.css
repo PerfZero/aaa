@@ -971,6 +971,7 @@ p {
   font-weight: 500;
   margin-bottom: 0;
   font-size: 23px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
