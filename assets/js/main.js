@@ -207,17 +207,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const legalContent = document.getElementById("legalContent");
 
   physicalButton.addEventListener("click", function () {
-    physicalButton.classList.add("active");
-    legalButton.classList.remove("active");
-    physicalContent.classList.add("active");
-    legalContent.classList.remove("active");
+    physicalButton.classList.add("actives");
+    legalButton.classList.remove("actives");
+    physicalContent.classList.add("actives");
+    legalContent.classList.remove("actives");
   });
 
   legalButton.addEventListener("click", function () {
-    legalButton.classList.add("active");
-    physicalButton.classList.remove("active");
-    legalContent.classList.add("active");
-    physicalContent.classList.remove("active");
+    legalButton.classList.add("actives");
+    physicalButton.classList.remove("actives");
+    legalContent.classList.add("actives");
+    physicalContent.classList.remove("actives");
   });
 });
 
