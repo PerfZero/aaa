@@ -294,3 +294,39 @@ document.addEventListener('DOMContentLoaded', function() {
       incomeInput.value = new Intl.NumberFormat('ru-RU').format(value);
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeMenu = document.querySelector('.close-menu');
+  const switchButtons = document.querySelectorAll('.switch-btn');
+  const menuLists = document.querySelectorAll('.menu-list');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.add('show-menu');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('show-menu');
+  });
+
+  switchButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-target');
+
+      menuLists.forEach(list => {
+        if (list.id === target) {
+          list.style.display = 'block';
+        } else {
+          list.style.display = 'none';
+        }
+      });
+
+      switchButtons.forEach(btn => btn.classList.remove('actives'));
+      button.classList.add('actives');
+    });
+  });
+
+  // Initialize the view
+  document.querySelector('.switch-btn[data-target="legal"]').click();
+});
