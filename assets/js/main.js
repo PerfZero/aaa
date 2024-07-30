@@ -301,6 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeMenu = document.querySelector('.close-menu');
   const switchButtons = document.querySelectorAll('.switch-btn');
   const menuLists = document.querySelectorAll('.menu-list');
+  const submenuItems = document.querySelectorAll('.submenu > span');
 
   menuToggle.addEventListener('click', () => {
     mobileMenu.classList.add('show-menu');
@@ -322,8 +323,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      switchButtons.forEach(btn => btn.classList.remove('actives'));
-      button.classList.add('actives');
+      switchButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+
+  submenuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const parent = item.parentElement;
+      parent.classList.toggle('submenu-open');
+      
+      // Toggle class to rotate arrow
+      const arrow = parent.querySelector('::after');
+      if (parent.classList.contains('submenu-open')) {
+        arrow.style.transform = 'rotate(180deg)';
+      } else {
+        arrow.style.transform = 'rotate(0deg)';
+      }
     });
   });
 
