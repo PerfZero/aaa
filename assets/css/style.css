@@ -1,5 +1,12 @@
 * {
-  outline: red;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -12,6 +19,8 @@ html {
 
 a {
   color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
   text-decoration: none;
 }
 
@@ -799,6 +808,9 @@ img {
 
 .submenu > span {
   cursor: pointer;
+  width: 100%;
+  display: block;
+  height: 25px;
 }
 
 .services__item h3 {
@@ -1596,8 +1608,27 @@ p {
     justify-content: flex-end;
     gap: 10px;
     width: 100%;
-    padding: 20px 10px;
+    padding: 0 10px;
+    height: 102px;
   }
+
+  .services__item {
+
+    position: relative;
+}
+
+
+  .services__item::after {
+    content: '';
+    background-image: url(/assets/img/arrow-r.svg);
+    position: absolute;
+    width: 19px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 10px;
+    top: 37px;
+}
 
   .services__item img {
     width: 15%;
@@ -1616,7 +1647,9 @@ p {
 
   .services__item p {
     padding: 0;
-    font-size: clamp(0.75rem, 5.455vw - 0.341rem, 1.125rem);
+    font-size: 16px;
+    margin-top: 5px;
+    width: 90%;
     text-align: left;
     margin: 0;
   }
