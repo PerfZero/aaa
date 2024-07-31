@@ -14,20 +14,20 @@ const swiper = new Swiper(".swiper-w", {
   pagination: {
     el: ".swiper-pagination-1",
   },
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
 
   // Breakpoints for responsive design
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.3,
       spaceBetween: 10,
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.3,
       spaceBetween: 20,
     },
     // when window width is >= 640px
