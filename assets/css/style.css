@@ -155,7 +155,7 @@ img {
 
 .hero {
   margin-top: 50px;
-  position: fixed;
+  position: relative;
 }
 
 .block-approved {
@@ -1176,6 +1176,11 @@ p {
     right: 48px;
     top: 21px;
     font-size: 25px;
+}
+
+.hero {
+  margin-top: 50px;
+  position: fixed;
 }
 
   .header_nav {
