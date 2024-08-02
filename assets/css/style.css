@@ -155,6 +155,7 @@ img {
 
 .hero {
   margin-top: 50px;
+  position: fixed;
 }
 
 .block-approved {
@@ -1155,8 +1156,41 @@ p {
   }
 
   .header {
+    z-index: 9999;
+    /* padding: 0 20px; */
+    position: fixed;
+    height: 90px;
+    top: -30px;
+    width: 100%;
+    background: #0000005c;  }
+
+  .menu-toggle {
+    display: none;
+    background-color: #3330;
+    color: white;
+    border: none;
+    /* padding: 10px; */
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 48px;
+    top: 21px;
+    font-size: 25px;
+}
+
+  .header_nav {
+    display: flex;
     padding: 0 20px;
-  }
+    margin-top: 10px;
+    /* margin: auto 0; */
+    position: relative;
+}
+
+  .hero {
+    margin-top: 50px;
+    position: fixed;
+    top: 120px;
+}
 
   .hero-wrapper__down {
     display: none;
@@ -1203,7 +1237,9 @@ p {
   .main {
     border-radius: 40px 40px 0 0;
     padding-top: 30px;
-    margin-top: 49px;
+    margin-top: 829px;
+    z-index: 999;
+    position: relative;
   }
 
   .switch {
