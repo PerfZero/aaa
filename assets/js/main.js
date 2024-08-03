@@ -346,3 +346,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize the view
   document.querySelector('.switch-btn[data-target="legal"]').click();
 });
+
+document.addEventListener('scroll', function() {
+  var hero = document.querySelector('.hero');
+  var main = document.querySelector('.main');
+  var scrollPosition = window.scrollY;
+  
+  // Расчёт эффекта параллакса
+  var parallaxEffect = scrollPosition * 0.5; // Скорректируйте коэффициент для желаемого эффекта
+  
+  // Применение эффекта параллакса к hero и main
+  hero.style.transform = `translateY(${parallaxEffect}px)`;
+  main.style.transform = `translateY(${parallaxEffect}px)`;
+});
