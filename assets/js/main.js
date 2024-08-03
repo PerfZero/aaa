@@ -348,14 +348,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('scroll', function() {
-  var hero = document.querySelector('.hero');
-  var main = document.querySelector('.main');
-  var scrollPosition = window.scrollY;
-  
-  // Расчёт эффекта параллакса
-  var parallaxEffect = scrollPosition * 0.5; // Скорректируйте коэффициент для желаемого эффекта
-  
-  // Применение эффекта параллакса к hero и main
-  hero.style.transform = `translateY(${parallaxEffect}px)`;
-  main.style.transform = `translateY(${parallaxEffect}px)`;
+  const fixedElement = document.querySelector('.hero');
+  const scrollPosition = window.scrollY;
+
+  // Измените значение, чтобы настроить смещение элемента
+  const offset = 150; 
+  fixedElement.style.top = `${scrollPosition + offset}px`;
 });
