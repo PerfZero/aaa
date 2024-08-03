@@ -347,11 +347,3 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.switch-btn[data-target="legal"]').click();
 });
 
-document.addEventListener('scroll', function() {
-  const fixedElement = document.querySelector('.hero');
-  const scrollPosition = window.scrollY;
-
-  // Измените значение, чтобы настроить смещение элемента
-  const offset = 150; 
-  fixedElement.style.top = `${scrollPosition + offset}px`;
-});
