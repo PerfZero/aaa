@@ -1143,6 +1143,25 @@ p {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    background: #000;
+
+}
+
+.hero-wrapper::after {
+  background-image: url(/assets/img/bacc.png);
+  display: block;
+  content: '';
+  top: -150px;
+  left: 0;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
   .nav {
     display: none;
   }
@@ -1157,12 +1176,39 @@ p {
 
   .header {
     z-index: 9999;
-    /* padding: 0 20px; */
     position: fixed;
-    height: 90px;
+    height: 102px;
     top: -30px;
     width: 100%;
-    background: #0000005c;  }
+
+
+  }
+
+  .header::before{
+    background-repeat: no-repeat;
+    /* padding: 0 20px; */
+    position: fixed;
+    height: 102px;
+    width: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9Ijg0IiB2aWV3Qm94PSIwIDAgMzIwIDg0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0zMTkuNSAwSDBWODMuNUMwIDYyLjIzNyAxNy4yMzcgNDUgMzguNSA0NUg1MS41SDI2N0gyODEuNUMzMDIuNDg3IDQ1IDMxOS41IDYyLjAxMzIgMzE5LjUgODNWMEwzMTkuNSAwWiIgZmlsbD0iIzAzMDMwQSIgLz4KPC9zdmc+');
+    background-size: cover;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Добавьте плавный переход для опасити */
+
+  }
+
+  .header.visible::before {
+    opacity: 1;
+}
+
+
+
+  .header__logo-img img {
+    width: 49px;
+    height: auto;
+    margin-right: 70px;
+}
 
   .menu-toggle {
     display: none;
@@ -1174,7 +1220,7 @@ p {
     cursor: pointer;
     position: absolute;
     right: 48px;
-    top: 21px;
+    top: 9px;
     font-size: 25px;
 }
 

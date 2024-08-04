@@ -347,3 +347,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.switch-btn[data-target="legal"]').click();
 });
 
+document.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  const scrollPosition = window.scrollY;
+  
+  if (scrollPosition > 150) {
+      header.classList.add('visible');
+  } else {
+      header.classList.remove('visible');
+  }
+});
